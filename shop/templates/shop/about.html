@@ -1,0 +1,32 @@
+{% extends "shop/basic.html" %}
+
+{%block title %}About{%endblock %}
+
+
+{%block body%}
+{% load static %}
+
+<style>
+    .skill-row
+    {
+        width: 50%;
+        margin: 100px auto 100px auto;
+        text-align: left;
+    }
+    .skill-img
+    {
+       height: 200px;
+       width: 200px;
+       margin-right: 30px;
+       float: left;
+    }
+
+</style>
+
+<div class="skill-row"> 
+    <img src="{% static 'shop\yashna-profile-img.png' %}" class="skill-img rounded-circle my-2 mx-5">
+    <h2 style="padding-top: 30px;">Hi,</h2>
+    <p>I am Yashna Nathwani , a budding web developer. I am skilled in Python, Java , C++ and Data Structures. This is my first project using Django and Bootstrap.It is still under process.Hope you like it!</p>
+</div>
+{%endblock%}
+
